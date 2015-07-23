@@ -50,7 +50,7 @@ public class MainActivityFragment extends Fragment {
 
         for (Sensor s: allSensors)
         {
-            Log.v("SensorActivity", s.toString());
+            Log.v(mContext.getPackageName(), Utils.sensorTypeToName(s.getType())+"   " + s.toString());
         }
 
     }
